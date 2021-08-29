@@ -1,0 +1,56 @@
+@import "./buttons.css";
+body {
+  background-image: url("https://comiqueros.cl/wp-content/uploads/2021/01/415789925_1280x720.jpg");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper {
+  max-inline-size: 600px;
+  margin: auto;
+}
+.player {
+  margin-block-start: 150px;
+  position: relative;
+}
+.player video {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  vertical-align: middle;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: rgba(247, 210, 90, 0.63) 5px 5px 50px 5px;
+}
+.player-title {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: 0;
+  inset-block-start: 6px;
+  inset-inline-start: 5px;
+}
+.player-controls {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.player-progress {
+  position: absolute;
+  inset-block-end: 0px;
+  inset-inline: 0;
+  display: flex;
+  padding: 6px;
+}
+.player-progress input {
+  flex: 1;
+}
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s opacity;
+}
+.player:hover .player-overlay {
+  opacity: 0.8;
+}

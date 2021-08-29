@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <video id="video" poster="https://www.muylinux.com/wp-content/uploads/2010/08/title-Sintel.jpg"
+                src="https://media.w3.org/2010/05/sintel/trailer.mp4"></video>
+            <div class="player-overlay">
+                <h5 class="player-title">"Sintel" Trailer, Durian Open Movie Project</h5>
+                <div class="player-controls">
+                    <button class="button" id="backward" aria-label="backward 10 seg"></button>
+                    <button class="button" id="play" aria-label="Play"></button>
+                    <button class="button" hidden id="pause" aria-label="Pause"></button>
+                    <button class="button" id="forward" aria-label="forward 10 seg"></button>
+                </div>
+                <div class="player-progress">
+                    <input type="range" id="progress" min="0" value="0" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./Scripts/controles.js"></script>
+
+</html>
